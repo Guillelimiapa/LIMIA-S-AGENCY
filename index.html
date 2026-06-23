@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMIA'S AGENCY | Representación de Futbolistas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo-link">
+                <img src="logo.png" alt="LIMIA'S AGENCY Logo" class="nav-logo">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#quien-soy" class="nav-link">Quién Soy</a></li>
+                <li><a href="#jugadores" class="nav-link">Jugadores</a></li>
+                <li><a href="#metodo" class="nav-link">Método</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <img src="logo.png" alt="LIMIA'S AGENCY" class="hero-logo">
+            <h1 class="hero-title">Representación de <span class="highlight">Excelencia</span></h1>
+            <p class="hero-subtitle">Gestión profesional de carreras deportivas. Donde el talento encuentra su camino.</p>
+            <a href="#quien-soy" class="btn btn-primary">Conócenos</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Quién Soy -->
+    <section id="quien-soy" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre Nosotros</span>
+                <h2 class="section-title">Quién <span class="text-green">Soy</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Representante</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Representante de Futbolistas Profesionales</h3>
+                    <p>
+                        En <strong>LIMIA'S AGENCY</strong> entendemos que detrás de cada gran futbolista hay una carrera que cuidar, 
+                        un sueño que proteger y un futuro que construir. Somos una agencia especializada en la representación integral 
+                        de deportistas de élite.
+                    </p>
+                    <p>
+                        Con años de experiencia en el mercado del fútbol nacional e internacional, ofrecemos un servicio personalizado 
+                        que abarca desde la negociación de contratos hasta la gestión de la imagen pública, el asesoramiento financiero 
+                        y la planificación de la carrera post-deportiva.
+                    </p>
+                    <p>
+                        Nuestro compromiso es claro: <strong>tu carrera, nuestra prioridad</strong>. Trabajamos con transparencia, 
+                        profesionalidad y una red de contactos que garantiza las mejores oportunidades para nuestros clientes.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Jugadores representados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Países</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jugadores -->
+    <section id="jugadores" class="section players">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Cartera</span>
+                <h2 class="section-title">Jugadores que <span class="text-green">Represento</span></h2>
+                <p class="section-desc">Talentos de élite que confían en nuestra gestión profesional</p>
+            </div>
+            <div class="players-grid">
+                <!-- Jugador 1 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <div class="player-initials">AL</div>
+                        <div class="player-badge">Delantero</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Alex López</h3>
+                        <p class="player-position">Delantero Centro · 24 años</p>
+                        <div class="player-details">
+                            <span>1.84m</span>
+                            <span>·</span>
+                            <span>España</span>
+                            <span>·</span>
+                            <span>Izquierdo</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jugador 2 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <div class="player-initials">MR</div>
+                        <div class="player-badge">Centrocampista</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Marco Rivas</h3>
+                        <p class="player-position">Mediocentro · 22 años</p>
+                        <div class="player-details">
+                            <span>1.78m</span>
+                            <span>·</span>
+                            <span>Argentina</span>
+                            <span>·</span>
+                            <span>Diestro</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jugador 3 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <div class="player-initials">JG</div>
+                        <div class="player-badge">Defensa</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Jonas Gómez</h3>
+                        <p class="player-position">Lateral Izquierdo · 26 años</p>
+                        <div class="player-details">
+                            <span>1.81m</span>
+                            <span>·</span>
+                            <span>Uruguay</span>
+                            <span>·</span>
+                            <span>Zurdo</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jugador 4 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <div class="player-initials">DS</div>
+                        <div class="player-badge">Portero</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Diego Sánchez</h3>
+                        <p class="player-position">Portero · 28 años</p>
+                        <div class="player-details">
+                            <span>1.92m</span>
+                            <span>·</span>
+                            <span>España</span>
+                            <span>·</span>
+                            <span>Diestro</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jugador 5 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <div class="player-initials">TK</div>
+                        <div class="player-badge">Extremo</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Takeshi Kimura</h3>
+                        <p class="player-position">Extremo Derecho · 20 años</p>
+                        <div class="player-details">
+                            <span>1.75m</span>
+                            <span>·</span>
+                            <span>Japón</span>
+                            <span>·</span>
+                            <span>Ambidestro</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jugador 6 -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <div class="player-initials">LF</div>
+                        <div class="player-badge">Defensa</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Lucas Ferreira</h3>
+                        <p class="player-position">Central · 23 años</p>
+                        <div class="player-details">
+                            <span>1.88m</span>
+                            <span>·</span>
+                            <span>Brasil</span>
+                            <span>·</span>
+                            <span>Diestro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="players-note">
+                <p>* Las tarjetas mostradas son ejemplos. Sustituye las iniciales por las fotos reales de los jugadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método de Trabajo -->
+    <section id="metodo" class="section method">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Proceso</span>
+                <h2 class="section-title">Método de <span class="text-green">Trabajo</span></h2>
+                <p class="section-desc">Una metodología probada para maximizar el potencial de cada jugador</p>
+            </div>
+            <div class="method-grid">
+                <div class="method-card">
+                    <div class="method-number">01</div>
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Análisis Individual</h3>
+                    <p>Evaluamos minuciosamente el perfil técnico, táctico, físico y mental de cada jugador para identificar fortalezas y áreas de mejora.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">02</div>
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Estrategia de Carrera</h3>
+                    <p>Diseñamos un plan a corto, medio y largo plazo adaptado a las ambiciones deportivas y personales de cada talento.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">03</div>
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Negociación</h3>
+                    <p>Gestionamos las conversaciones con clubes y patrocinadores para asegurar las condiciones óptimas en cada contrato.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">04</div>
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Proyección Internacional</h3>
+                    <p>Ampliamos horizontes con nuestra red de contactos en mercados de Europa, Asia y América para abrir nuevas puertas.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">05</div>
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Protección Legal</h3>
+                    <p>Asesoramos y protegemos los intereses de nuestros jugadores en todas las facetas legales, fiscales y administrativas.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">06</div>
+                    <div class="method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Seguimiento Continuo</h3>
+                    <p>Acompañamos al jugador en cada etapa con comunicación constante, revisión de objetivos y ajuste de estrategias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos de tu <span class="text-green">Futuro</span></h2>
+                <p class="section-desc">Si eres jugador, club o patrocinador, queremos conocerte</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="44272b2a302527302b04282d292d25372523212a273d6a272b29">[email&#160;protected]</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+34 612 345 678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Oficina</h4>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=42.341187131978664,-7.8756630427616425" target="_blank" rel="noopener noreferrer" class="contact-link">Ourense, España</a></p>
+                            <small class="contact-coords">42.341187, -7.875663</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="logo.png" alt="LIMIA'S AGENCY" class="footer-logo">
+                <p class="footer-text">Representación profesional de futbolistas con excelencia, transparencia y visión internacional.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> LIMIA'S AGENCY. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1034746cb1e301c',t:'MTc4MjIxNTQ2MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
