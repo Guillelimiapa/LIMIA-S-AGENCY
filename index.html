@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMIA'S AGENCY | Representación de Futbolistas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo-link">
+                <img src="logo-horizontal.svg" alt="LIMIA'S AGENCY" class="nav-logo">
+            </a>
+            <ul class="nav-menu-desktop">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#quien-soy" class="nav-link">Quién Soy</a></li>
+                <li><a href="#jugadores" class="nav-link">Jugadores</a></li>
+                <li><a href="#metodo" class="nav-link">Método</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú Overlay (mobile only) -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-overlay-content">
+            <a href="#inicio" class="menu-link">Inicio</a>
+            <a href="#quien-soy" class="menu-link">Quién Soy</a>
+            <a href="#jugadores" class="menu-link">Jugadores</a>
+            <a href="#metodo" class="menu-link">Método</a>
+            <a href="#contacto" class="menu-link">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <img src="logo.png" alt="LIMIA'S AGENCY" class="hero-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <h1 class="hero-logo-fallback" style="display:none; font-size:3rem; font-weight:800; color:var(--color-black); margin-bottom:20px;"><span style="color:var(--color-black);">LIMIA'S</span> <span style="color:var(--color-green);">AGENCY</span></h1>
+            <h2 class="hero-title">Representación de <span class="highlight">Excelencia</span></h2>
+            <p class="hero-subtitle">Gestión profesional de carreras deportivas. Donde el talento encuentra su camino.</p>
+            <a href="#quien-soy" class="btn btn-primary">Conócenos</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Quién Soy -->
+    <section id="quien-soy" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre Nosotros</span>
+                <h2 class="section-title">Quién <span class="text-green">Soy</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/representante.jpg" alt="Representante de LIMIA'S AGENCY" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h3>Representante de Futbolistas Profesionales</h3>
+                    <p>
+                        En <strong>LIMIA'S AGENCY</strong> entendemos que detrás de cada gran futbolista hay una carrera que cuidar, 
+                        un sueño que proteger y un futuro que construir. Somos una agencia especializada en la representación integral 
+                        de deportistas de élite.
+                    </p>
+                    <p>
+                        Con años de experiencia en el mercado del fútbol nacional e internacional, ofrecemos un servicio personalizado 
+                        que abarca desde la negociación de contratos hasta la gestión de la imagen pública, el asesoramiento financiero 
+                        y la planificación de la carrera post-deportiva.
+                    </p>
+                    <p>
+                        Nuestro compromiso es claro: <strong>tu carrera, nuestra prioridad</strong>. Trabajamos con transparencia, 
+                        profesionalidad y una red de contactos que garantiza las mejores oportunidades para nuestros clientes.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Jugadores representados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Países</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jugadores -->
+    <section id="jugadores" class="section players">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Cartera</span>
+                <h2 class="section-title">Jugadores que <span class="text-green">Represento</span></h2>
+                <p class="section-desc">Talentos de élite que confían en nuestra gestión profesional</p>
+            </div>
+            <div class="players-grid">
+                <!-- Jugador 1 - Anselmovic Da Limia -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/jugador1.jpg" alt="Anselmovic Da Limia">
+                        <div class="player-badge">Delantero</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Anselmovic Da Limia</h3>
+                        <ul class="player-data-list">
+                            <li><strong>Nacionalidad:</strong> Croacia</li>
+                            <li><strong>Edad:</strong> 23 años (12-05-2003)</li>
+                            <li><strong>Altura:</strong> 1.83 m</li>
+                            <li><strong>Peso:</strong> 76 kg</li>
+                            <li><strong>Selección:</strong> HRVATSKA</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Jugador 2 - Victor Pistarapida Jr -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/jugador2.jpg" alt="Victor Pistarapida Jr">
+                        <div class="player-badge">Centrocampista</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Victor Pistarapida Jr</h3>
+                        <ul class="player-data-list">
+                            <li><strong>Nacionalidad:</strong> Marruecos</li>
+                            <li><strong>Edad:</strong> 18 años (19-12-2007)</li>
+                            <li><strong>Altura:</strong> 1.83 m</li>
+                            <li><strong>Peso:</strong> 76 kg</li>
+                            <li><strong>Selección:</strong> MAR</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Jugador 3 - Alvin Feghouli Melano -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="jugador3.jpg" alt="Alvin Feghouli Melano">
+                        <div class="player-badge">Defensa</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Alvin Feghouli Melano</h3>
+                        <ul class="player-data-list">
+                            <li><strong>Nacionalidad:</strong> Argelia</li>
+                            <li><strong>Edad:</strong> 19 años (20-01-2007)</li>
+                            <li><strong>Altura:</strong> 1.83 m</li>
+                            <li><strong>Peso:</strong> 76 kg</li>
+                            <li><strong>Selección:</strong> ALG</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Jugador 4 - Pipolski -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/jugador4.jpg" alt="Pipolski">
+                        <div class="player-badge">Portero</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Pipolski</h3>
+                        <ul class="player-data-list">
+                            <li><strong>Nacionalidad:</strong> Polonia</li>
+                            <li><strong>Edad:</strong> 19 años (03-06-2007)</li>
+                            <li><strong>Altura:</strong> 1.83 m</li>
+                            <li><strong>Peso:</strong> 76 kg</li>
+                            <li><strong>Selección:</strong> POLSKA</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Jugador 5 - Freddy Papadopoulos -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/jugador5.jpg" alt="Freddy Papadopoulos">
+                        <div class="player-badge">Extremo</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Freddy Papadopoulos</h3>
+                        <ul class="player-data-list">
+                            <li><strong>Nacionalidad:</strong> Grecia</li>
+                            <li><strong>Edad:</strong> 18 años (07-09-2007)</li>
+                            <li><strong>Altura:</strong> 1.83 m</li>
+                            <li><strong>Peso:</strong> 76 kg</li>
+                            <li><strong>Selección:</strong> GRE</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Jugador 6 - Susinho do Nascimento -->
+                <div class="player-card">
+                    <div class="player-image">
+                        <img src="images/jugador6.jpg" alt="Susinho do Nascimento">
+                        <div class="player-badge">Defensa</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Susinho do Nascimento</h3>
+                        <ul class="player-data-list">
+                            <li><strong>Nacionalidad:</strong> Brasil</li>
+                            <li><strong>Edad:</strong> 19 años (10-04-2007)</li>
+                            <li><strong>Altura:</strong> 1.83 m</li>
+                            <li><strong>Peso:</strong> 76 kg</li>
+                            <li><strong>Selección:</strong> BRA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método de Trabajo -->
+    <section id="metodo" class="section method">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Proceso</span>
+                <h2 class="section-title">Método de <span class="text-green">Trabajo</span></h2>
+                <p class="section-desc">Una metodología probada para maximizar el potencial de cada jugador</p>
+            </div>
+            <div class="method-grid">
+                <div class="method-card">
+                    <div class="method-number">01</div>
+                    <h3>Análisis Individual</h3>
+                    <p>Evaluamos minuciosamente el perfil técnico, táctico, físico y mental de cada jugador para identificar fortalezas y áreas de mejora.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">02</div>
+                    <h3>Estrategia de Carrera</h3>
+                    <p>Diseñamos un plan a corto, medio y largo plazo adaptado a las ambiciones deportivas y personales de cada talento.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">03</div>
+                    <h3>Negociación</h3>
+                    <p>Gestionamos las conversaciones con clubes y patrocinadores para asegurar las condiciones óptimas en cada contrato.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">04</div>
+                    <h3>Proyección Internacional</h3>
+                    <p>Ampliamos horizontes con nuestra red de contactos en mercados de Europa, Asia y América para abrir nuevas puertas.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">05</div>
+                    <h3>Protección Legal</h3>
+                    <p>Asesoramos y protegemos los intereses de nuestros jugadores en todas las facetas legales, fiscales y administrativas.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-number">06</div>
+                    <h3>Seguimiento Continuo</h3>
+                    <p>Acompañamos al jugador en cada etapa con comunicación constante, revisión de objetivos y ajuste de estrategias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos de tu <span class="text-green">Futuro</span></h2>
+                <p class="section-desc">Si eres jugador, club o patrocinador, queremos conocerte</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="/cdn-cgi/l/email-protection#ec8f8382988d8f9883ac808581858d9f8d8b89828f95c28f8381" class="contact-link"><span class="__cf_email__" data-cfemail="84e7ebeaf0e5e7f0ebc4e8ede9ede5f7e5e3e1eae7fdaae7ebe9">[email&#160;protected]</span></a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+34612345678" class="contact-link">+34 612 345 678</a></p>
+                            <p style="margin-top:4px;"><a href="https://wa.me/34612345678" target="_blank" rel="noopener noreferrer" class="contact-link">Enviar WhatsApp</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <h4>Oficina</h4>
+                            <p><a href="https://www.google.com/maps/search/?api=1&query=42.341187131978664,-7.8756630427616425" target="_blank" rel="noopener noreferrer" class="contact-link">Estadio de O Couto, Ourense</a></p>
+                            <small class="contact-coords">42.341187, -7.875663</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="logo.png" alt="LIMIA'S AGENCY" class="footer-logo">
+                <p class="footer-text">Representación profesional de futbolistas con excelencia, transparencia y visión internacional.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; LIMIA'S AGENCY. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
