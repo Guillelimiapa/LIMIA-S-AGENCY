@@ -13,12 +13,12 @@ Página web de la agencia deportiva y representación de futbolistas **LIMIA'S A
 ├── logo-horizontal.svg     # Logotipo horizontal para navbar
 └── 📁 images/
 │   ├── representante.jpg   # Foto del representante
-│   ├── jugador1.jpg        # Alex López
-│   ├── jugador2.jpg        # Marco Rivas
-│   ├── jugador3.jpg        # Jonas Gómez
-│   ├── jugador4.jpg        # Diego Sánchez
-│   ├── jugador5.jpg        # Takeshi Kimura
-│   └── jugador6.jpg        # Lucas Ferreira
+│   ├── jugador1.jpg        # Anselmovic Da Limia
+│   ├── jugador2.jpg        # Víctor Pistarrápida JR
+│   ├── jugador3.jpg        # Alvin Feghouli Melano
+│   ├── jugador4.jpg        # Pipolski
+│   ├── jugador5.jpg        # Freddy Papadopoulos
+│   └── jugador6.jpg        # Susinho du Nascimiento
 ```
 
 ## Apartados
