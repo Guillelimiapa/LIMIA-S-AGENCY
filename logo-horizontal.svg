@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" width="520" height="80">
+  <defs>
+    <style>
+      .text-black { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 900; font-size: 50px; letter-spacing: 1px; }
+      .text-green { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 900; font-size: 50px; letter-spacing: 1px; }
+    </style>
+  </defs>
+  
+  <!-- LIMIA'S in black -->
+  <text x="0" y="64" class="text-black" fill="#111111">LIMIA'S</text>
+  
+  <!-- Walking man in suit silhouette -->
+  <g transform="translate(214, 6) scale(0.9)" fill="#111111">
+    <!-- Head -->
+    <ellipse cx="42" cy="12" rx="9" ry="10"/>
+    <!-- Neck/collar area -->
+    <path d="M36 20 L48 20 L46 26 L38 26 Z"/>
+    <!-- Suit torso -->
+    <path d="M28 24 L56 24 L62 58 L52 58 L52 100 L32 100 L32 58 L22 58 Z"/>
+    <!-- White shirt visible -->
+    <path d="M40 24 L44 24 L44 38 L40 38 Z" fill="#ffffff"/>
+    <!-- Tie -->
+    <path d="M40 24 L44 24 L43 36 L42 40 L41 36 Z" fill="#111111"/>
+    <!-- Suit lapel left -->
+    <path d="M40 24 L32 58 L36 58 L40 28 Z" fill="#111111"/>
+    <!-- Suit lapel right -->
+    <path d="M44 24 L52 58 L48 58 L44 28 Z" fill="#111111"/>
+    <!-- Left arm swinging back -->
+    <path d="M26 28 L10 50 L14 54 L28 34 Z"/>
+    <!-- Left hand -->
+    <ellipse cx="10" cy="52" rx="4" ry="3"/>
+    <!-- Right arm forward with briefcase -->
+    <path d="M56 28 L74 48 L70 52 L54 34 Z"/>
+    <!-- Right hand -->
+    <ellipse cx="74" cy="50" rx="4" ry="3"/>
+    <!-- Briefcase handle -->
+    <path d="M66 48 L66 42 L72 42 L72 48" stroke="#111111" stroke-width="2" fill="none"/>
+    <!-- Briefcase body -->
+    <rect x="62" y="48" width="20" height="14" rx="2" fill="#111111"/>
+    <!-- Left leg walking forward -->
+    <path d="M32 98 L18 128 L24 130 L36 102 Z"/>
+    <!-- Left shoe -->
+    <path d="M16 124 L10 130 L22 134 L24 128 Z"/>
+    <!-- Right leg stepping back -->
+    <path d="M52 98 L62 128 L56 130 L46 102 Z"/>
+    <!-- Right shoe -->
+    <path d="M64 124 L70 130 L58 134 L56 128 Z"/>
+  </g>
+  
+  <!-- AGENCY in green -->
+  <text x="300" y="64" class="text-green" fill="#00a651">AGENCY</text>
+</svg>
