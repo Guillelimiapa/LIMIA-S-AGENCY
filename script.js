@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Active Navigation Link on Scroll ---
     const sections = document.querySelectorAll('section[id]');
+    const allNavLinks = document.querySelectorAll('.menu-link, .nav-menu-desktop .nav-link');
 
     function updateActiveLink() {
         const scrollY = window.scrollY;
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop - 100;
             const sectionId = section.getAttribute('id');
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                menuLinks.forEach(link => {
+                allNavLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === '#' + sectionId) {
                         link.classList.add('active');
